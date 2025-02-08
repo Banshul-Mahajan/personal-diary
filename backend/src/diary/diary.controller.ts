@@ -17,6 +17,7 @@ export class DiaryController {
     // create: is a func name, it creates a new diary entry in the database
     // @Body: this extracts the request body it makes your api request like this { title: "My First Diary", content: "Today was great!", userId: "12345" }
     // Promise: Because the func is fetching data from database, which might take time, So instead of freezing the app it returns a promise that reolves when data is ready
+    // Promise<DiaryEntry> means the function will eventually return a DiaryEntry object
     // this.diaryService.createDiaryEntry - calls tio create a diary entry in database
     // the diaryService.createDiaryEntry(...) will we called like this this.diaryService.createDiaryEntry("12345", "My First Diary", "Today was amazing!");
 
